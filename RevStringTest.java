@@ -18,8 +18,8 @@ class RevString {
         return rs;
     }
     //inplace
-    String inplaceRev(String s){
-        for(int i=0;i<s.length;i++){
+    String inPlaceRev(String s){
+        for(int i=0;i<s.length();i++){
             s+=s.charAt(s.length()-1)+""+s.substring(1,s.length()-1);
         }
         return s;
@@ -35,7 +35,7 @@ class RevStringTest
 		String str=sc.nextLine();
 		RevString sr=new RevString();
 		System.out.println("Reverse of given String is:"+sr.findRev(str));
-            System.out.println("Reverse of given String inplace is:"+sr.inplaceRev(str));
+            System.out.println("Reverse of given String in place is:"+sr.inPlaceRev(str));
 		}
 	} 
 		
